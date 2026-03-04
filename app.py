@@ -6,8 +6,8 @@ import pandas as pd
 
 # Load preprocess and model from MLflow
 # Load preprocessor
-scaler = joblib.load("artifacts/preprocessor.pkl")
-model = joblib.load("artifacts/model.pkl")
+scaler = joblib.load("preprocessor.pkl")
+model = joblib.load("model.pkl")
 
 def main():
     st.title('Machine Learning Heart Attack Prediction Model Deployment')
@@ -42,5 +42,6 @@ def make_prediction(features):
 
 if __name__ == '__main__':
     main()
+
 
 
